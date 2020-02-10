@@ -18,10 +18,10 @@ if(!empty($email) && !empty($senha)){
         $user->log($sec, $msg);
         header("Location: cadastro.php?id=$id");
     }else{
-        header("Location: _index.php?info=1");
+        header("Location: index.php?info=1");
     }
 }else{
-    header("Location: _index.php?info=2");
+    header("Location: index.php?info=2");
 }  
 
 ?>

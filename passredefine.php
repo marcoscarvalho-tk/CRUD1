@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curso PHP</title>    
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>   
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>   
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 <body>
@@ -69,7 +69,7 @@
                         text: "Senha redefinida com sucesso!",
                         type: "success"}).then(okay => {
                         if (okay) {
-                        window.location.href = "_index.php";
+                        window.location.href = "index.php";
                         }
                     });
                         </script>';
@@ -81,7 +81,7 @@
                         text: "Erro na recuperação da senha!",
                         type: "error"}).then(okay => {
                         if (okay) {
-                        window.location.href = "_index.php";
+                        window.location.href = "index.php";
                         }
                     });
                         </script>';
@@ -96,7 +96,7 @@
                     <input type="password" name="senha" class="form-control text-center">                
                 </div>
                 <input type="submit" value="Enviar" class="btn btn-success"> 
-                <a href="_index.php" class="btn btn-primary">Voltar</a> 
+                <a href="index.php" class="btn btn-primary">Voltar</a> 
         </form> 
         <?php           
     }       
