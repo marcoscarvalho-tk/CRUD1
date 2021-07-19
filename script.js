@@ -28,10 +28,14 @@ function excluir(id){
         var hiddenValueID = $(this).children('#usrid').val();
         if ($(this).children('#check').val() == '1')
         {
+            $(this).closest(".tb-row").removeClass('bg-color')
+            $(this).children('#check').val('0')
             var valueData = '0';
         }
         else
         {
+            $(this).closest(".tb-row").addClass('bg-color')
+            $(this).children('#check').val('1')
             var valueData = '1';
         }
 

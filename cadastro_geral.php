@@ -27,7 +27,7 @@
     <section>
         <p><strong>CRUD</strong></p>
         <p>Cadastro Geral</p>
-        <table class="table table-striped text-center">
+        <table class="table text-center">
         <tr>
             <th>ID</th>
             <th>Nome</th>
@@ -54,7 +54,7 @@
             
             <?php foreach($cad->fetchAll() as $row): ?>
             
-                <tr class="<?php echo $row['status'] == 1 ?'bg-warning':''; ?>">
+                <tr class="tb-row<?php echo $row['status'] == 1 ?' bg-color':''; ?>">
                     <td> <?php echo $row['id'];?></td>
                     <td><?php echo $row['nome'];?></td>
                     <td><?php echo $row['email'];?></td>
@@ -65,14 +65,12 @@
                     </div>
                     </td>
 
-                    <td>
-                    <div class="onoffswitch">
+                    <td class="onoffswitch">
                         <input type="hidden" id="usrid" value="<?php echo $row['id']; ?>">
                         <input type="hidden" id="check" value="<?php echo $row['status'] ?>">
                         <input type="checkbox" data-size="sm" value="<?php echo $row['status']; ?>" 
                             <?php echo $row['status'] == '1'? 'checked' : '' ;?> 
-                            data-onstyle="danger" data-offstyle="dark" data-toggle="toggle"/>                    
-                    </div>                    
+                            data-onstyle="danger" data-offstyle="dark" data-toggle="toggle"/>  
                     </td>
                 </tr>
                 
