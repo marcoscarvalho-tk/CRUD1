@@ -90,7 +90,7 @@
             <a href="exit.php"  class="btn btn-warning mr-1"><i class="fas fa-sign-out-alt"></i> Sair</a>
     </section>        
     <footer>
-        <p>&copy;B7Web</p>
+        <p>&copy;</p>
     </footer>
     </div>
    
